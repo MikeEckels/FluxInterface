@@ -111,7 +111,7 @@ class Connection:
 			deviceInfoText.setConnectionProgress("Connection successfull!")
 		else:
 			deviceInfoText.setConnectionProgress("Connection failed")
-		
+			sys.exit()
 		return True
 	
 	def listTrustedKeys(self):
@@ -260,7 +260,7 @@ class Delta:
 		else:
 			deviceInfoText.setConnectionProgress("No devices discovered")
 			self._printer = None
-			exit()
+			sys.exit()
 
 
 def main():
