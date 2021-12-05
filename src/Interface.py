@@ -111,7 +111,6 @@ class Connection:
 			deviceInfoText.setConnectionProgress("Connection successfull!")
 		else:
 			deviceInfoText.setConnectionProgress("Connection failed")
-			sys.exit()
 		
 		return True
 	
