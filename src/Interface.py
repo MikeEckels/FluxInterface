@@ -132,7 +132,7 @@ class Delta:
 	def discover(self):
 		c = callback()
 		deviceInfoText.setConnectionProgress("Looking for printers on network...")
-		UpnpDiscover().discover(c.fire, timeout = 120)
+		UpnpDiscover().discover(c.fire, timeout = 1800)
 		self._hardware = c._device
 
 		if(self._hardware != None):
